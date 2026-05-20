@@ -97,7 +97,7 @@ base_url = "http://localhost:8081/v1"
 
 1. 在仓库页面点击 **Code → Download ZIP** 下载源码
 
-2. 解压后，用文本编辑器打开 `Codex启动器.py`
+2. 解压后，用文本编辑器打开 `launcher.py`
 
 3. 找到第 8 行 `LLAMA_DIR`，修改为你自己的 llama.cpp 解压路径：
 
