@@ -1,3 +1,5 @@
+﻿# -*- coding: utf-8 -*-
+
 import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 import os, subprocess, threading, time, json, pathlib, re
@@ -95,7 +97,7 @@ def start_llama():
         log_wid.configure(state=tk.DISABLED)
 
         cmd = [LLAMA_SERVER, '-m', model, '--host', '0.0.0.0', '--port', port, '--jinja', '--ctx-size', ctx]
-        proc = subprocess.Popen(cmd, cwd=LLAMA_DIR, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, bufsize=1, creationflags=subprocess.CREATE_NO_WINDOW)
+        proc = subprocess.Popen(cmd, cwd=LLAMA_DIR, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, encoding="utf-8", bufsize=1, creationflags=subprocess.CREATE_NO_WINDOW)
 
         def read_out():
             global session_start_time
