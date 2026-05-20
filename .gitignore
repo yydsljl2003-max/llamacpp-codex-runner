@@ -1,0 +1,17 @@
+*.pyc
+__pycache__/
+*.py[cod]
+*.class
+
+# Config files
+config.json
+*.local.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
